@@ -35,16 +35,13 @@ function shwib_theme_setup() {
 	add_theme_support( 'cleaner-caption' );
 	add_theme_support( 'cleaner-gallery' );
 
-	 //add_custom_background();
-	 
-	add_theme_support( 'breadcrumb-trail' );
-	add_theme_support( 'hybrid-core-post-meta-box' );
-	add_theme_support( 'hybrid-core-theme-settings' );
-	add_theme_support( 'hybrid-core-seo' );
+	 add_custom_background();
+	 add_theme_support( 'breadcrumb-trail' );
+	 add_theme_support( 'hybrid-core-post-meta-box' );
+	 add_theme_support( 'hybrid-core-theme-settings' );
+	 add_theme_support( 'hybrid-core-seo' );
 
 }
-
-
 
 function shwib_additional_setup() {
 	// Additional widget classes with number of each widget position and first/last widget class.

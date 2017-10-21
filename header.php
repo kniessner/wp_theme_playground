@@ -21,6 +21,15 @@
 <meta property="og:type"               content="articel " />
 <meta property="og:title"              content="Complex Photography" />
 <meta property="og:description"        content="Copyright : Sascha-Darius Knießner" />
+<?php
+if( $_GET["id"] ) {
+$cid = $_GET['id']; 
+
+    ?> 
+<meta property="og:image"  content="<?php echo wp_get_attachment_image_src( $cid, 'large')[0]; ?>" />
+	<?php
+	}
+?>
 
 
 
@@ -51,7 +60,10 @@
               <a class="navbar-brand" href="<?php bloginfo('url');?>"> <img src="<?php bloginfo('template_url');?>/_/img/logorbit.png"> 
             </div>
             <div class="navbar-collapse collapsing collapse" id="dropmenu">
-                <?php get_template_part( 'menus/menu-primary' );?>
+                <?php get_template_part( 'menus/menu-primary' );
+                
+                    //echo wp_get_attachment_url( $id );
+ ?>
 	
             </div><!--/.nav-collapse -->
           </div>
