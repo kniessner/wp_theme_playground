@@ -44,6 +44,8 @@ function shwib_theme_setup() {
 
 }
 
+
+
 function shwib_additional_setup() {
 	// Additional widget classes with number of each widget position and first/last widget class.
 	require_once( trailingslashit( TEMPLATEPATH ) . '/_/php/widget-classes.php' );
